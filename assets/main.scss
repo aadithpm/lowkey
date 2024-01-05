@@ -1,4 +1,5 @@
 $primary-font: "Bebas Neue", monospace;
+$secondary-font: "Cabin", monospace;
 $primary-font-color: #fafafa;
 $background-color: #131313;
 
@@ -33,7 +34,7 @@ a:hover {
 .logo {
     img {
         width: 25%;
-        margin-left: 29%;
+        margin-left: 32%;
         margin-top: 1%;
     }
 }
@@ -65,6 +66,37 @@ a:hover {
             span:hover {
                 border-bottom: 0.5px dotted $primary-font-color;
             }
+        }
+    }
+}
+
+.about {
+    margin-top: 5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: $secondary-font;
+    color: $primary-font-color;
+    h1 {
+        font-family: $primary-font;
+    }
+    ul {
+        list-style-type: none;
+        padding: 0;
+        li {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: nowrap;
+            align-items: flex-start;
+            margin-top: 15%;
+            margin-bottom: 15%;
+        }
+        .about-list-title {
+            display: block;
+            font-weight: bold;
+        }
+        .about-list-content {
+            margin-top: 2%;
         }
     }
 }

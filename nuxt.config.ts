@@ -7,6 +7,7 @@ export default defineNuxtConfig({
             {
                 families: {
                     "Bebas+Neue": true,
+                    Cabin: true,
                 },
             },
         ],
