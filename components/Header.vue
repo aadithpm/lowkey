@@ -2,8 +2,8 @@
     <div class="header">
         <div class="navbar left">
             <ul>
-                <li>Photography</li>
-                <li>About</li>
+                <li><NuxtLink to="/">Photography</NuxtLink></li>
+                <li><NuxtLink to="/about">About</NuxtLink></li>
             </ul>
         </div>
         <div class="logo">
@@ -15,7 +15,11 @@
                     <span><img src="~assets/email.svg" /></span>
                 </li>
                 <li>
-                    <span><img src="~assets/instagram.svg" /></span>
+                    <span
+                        ><NuxtLink
+                            to="https://www.instagram.com/__lowkey__photography/"
+                            ><img src="~assets/instagram.svg" /></NuxtLink
+                    ></span>
                 </li>
             </ul>
         </div>

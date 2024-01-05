@@ -6,6 +6,16 @@ body {
     background-color: $background-color;
 }
 
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+a:hover {
+    text-decoration: underline dotted;
+    text-underline-offset: 0.25rem;
+}
+
 .header {
     width: 100%;
     font-family: $primary-font;
@@ -15,7 +25,6 @@ body {
     justify-content: space-between;
     flex-wrap: nowrap;
     flex-direction: row;
-
     div {
         height: 80%;
     }
@@ -23,37 +32,39 @@ body {
 
 .logo {
     img {
-        width: 45%;
-        margin-left: 16.5%;
+        width: 25%;
+        margin-left: 29%;
+        margin-top: 1%;
     }
 }
 
 .navbar {
     display: flex;
     flex-direction: row;
-
     ul {
         display: flex;
         flex-direction: row;
     }
-
     ul li {
         list-style-type: none;
         margin: 5%;
-        font-size: x-large;
+        font-size: large;
     }
 }
 
 .right {
     ul {
         flex-direction: row-reverse;
-
         li {
             margin: 60%;
-        }
-
-        li span img {
-            height: 80%;
+            span {
+                img {
+                    height: 80%;
+                }
+            }
+            span:hover {
+                border-bottom: 0.5px dotted $primary-font-color;
+            }
         }
     }
 }
