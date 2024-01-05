@@ -1,0 +1,59 @@
+$primary-font: "Bebas Neue", monospace;
+$primary-font-color: #fafafa;
+$background-color: #131313;
+
+body {
+    background-color: $background-color;
+}
+
+.header {
+    width: 100%;
+    font-family: $primary-font;
+    color: $primary-font-color;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    flex-direction: row;
+
+    div {
+        height: 80%;
+    }
+}
+
+.logo {
+    img {
+        width: 45%;
+        margin-left: 16.5%;
+    }
+}
+
+.navbar {
+    display: flex;
+    flex-direction: row;
+
+    ul {
+        display: flex;
+        flex-direction: row;
+    }
+
+    ul li {
+        list-style-type: none;
+        margin: 5%;
+        font-size: x-large;
+    }
+}
+
+.right {
+    ul {
+        flex-direction: row-reverse;
+
+        li {
+            margin: 60%;
+        }
+
+        li span img {
+            height: 80%;
+        }
+    }
+}
